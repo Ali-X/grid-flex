@@ -9,6 +9,7 @@ body {
   background-color: darkslategray;
   box-sizing: border-box;
   flex-grow: 1;
+  flex-basis: 0;
 }
 
 .flex-item1 {
