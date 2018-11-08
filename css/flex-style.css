@@ -8,6 +8,7 @@ body {
   text-align: center;
   background-color: darkslategray;
   flex-grow: 1;
+  flex-basis: 0;
 }
 
 .flex-container--inner {
@@ -46,6 +47,7 @@ body {
 .flex-item4 {
   background-color: yellow;
   height: 300px;
+  width: 65%;
   flex-grow: 1;
   flex-basis: 0;
 }
