@@ -7,8 +7,21 @@ body {
   flex-flow: row wrap;
   text-align: center;
   background-color: darkslategray;
-  box-sizing: border-box;
   flex-grow: 1;
+}
+
+.flex-container--inner {
+  /*width: calc(65% + 100px);*/
+  flex-basis: 0;
+}
+
+
+.flex-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  border: black solid 1px;
 }
 
 .flex-item1 {
@@ -34,12 +47,14 @@ body {
   background-color: yellow;
   height: 300px;
   flex-grow: 1;
+  flex-basis: 0;
 }
 
 .flex-item5 {
   background-color: darkslategray;
   color: white;
   height: 450px;
+  width: 35%;
 }
 
 .flex-item6 {
@@ -48,15 +63,7 @@ body {
   flex-grow: 1;
 }
 
-.flex-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 30px;
-  border: black solid 1px;
-}
-
-.break{
+.break {
   display: inline-block;
   flex-basis: 100%;
   width: 0;
