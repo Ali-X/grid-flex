@@ -4,11 +4,19 @@ body {
 
 .flex-container {
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
   text-align: center;
   background-color: darkslategray;
   box-sizing: border-box;
   flex-grow: 1;
+}
+
+.row-container {
+  flex-direction: row;
+}
+
+.column-container {
+  flex-direction: column;
 }
 
 .flex-item1 {
@@ -33,13 +41,14 @@ body {
 .flex-item4 {
   background-color: yellow;
   height: 300px;
-  flex-grow: 1;
+  flex-grow: 65;
 }
 
 .flex-item5 {
   background-color: darkslategray;
   color: white;
   height: 450px;
+  flex-grow: 35;
 }
 
 .flex-item6 {

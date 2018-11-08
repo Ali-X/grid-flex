@@ -6,17 +6,22 @@
   <link rel="stylesheet" type="text/css" href="../css/flex-style.css">
 </head>
 <body>
-<div class="flex-container">
-  <div class="flex-item flex-item1">LOGO</div>
-  <div class="flex-item flex-item2">MENU</div>
-  <div class="break"></div>
-  <div class="flex-container">
+<div class="flex-container row-container">
+  <div class="flex-container column-container">
+    <div class="flex-item flex-item1">LOGO</div>
     <div class="flex-item flex-item3">NEWS FEED</div>
-    <div class="flex-item flex-item4">LIST OF SOME THING</div>
-    <div class="break"></div>
     <div class="flex-item flex-item6">FOOTER</div>
   </div>
-  <div class="flex-item flex-item5">NAVIGATION BAR</div>
+
+  <div class="flex-container column-container">
+    <div class="flex-item flex-item2">MENU</div>
+    <div class="flex-container row-container">
+      <div class="flex-item flex-item4">LIST OF SOME THING</div>
+      <div class="flex-item flex-item5">NAVIGATION BAR</div>
+    </div>
+  </div>
+
+  <!--<div class="break"></div>-->
 </div>
 </body>
 </html>
