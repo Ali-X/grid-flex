@@ -1,3 +1,7 @@
+:root {
+  --border-style: black solid 0.5px;
+}
+
 * {
   margin: 0;
 }
@@ -5,29 +9,25 @@
 .flex-container {
   display: flex;
   flex-flow: row wrap;
-  margin: auto;
-  background-color: darkslategray;
-  flex-grow: 1;
-  flex-basis: 0;
+  border: var(--border-style);
 }
 
 .flex-container--inner {
   flex-grow: 65;
-  flex-basis: 0;
+  flex-basis: 100px;
 }
-
 
 .flex-item {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 30px;
-  border: black solid 1px;
+  border: var(--border-style);
+  box-sizing: border-box;
 }
 
 .flex-item1 {
   background-color: yellow;
-  /*width: 100px;*/
   height: 100px;
   flex-basis: 100px;
 }
@@ -41,7 +41,6 @@
 .flex-item3 {
   background-color: darkred;
   color: white;
-  /*width: 100px;*/
   height: 300px;
   flex-basis: 100px;
 }
@@ -49,8 +48,7 @@
 .flex-item4 {
   background-color: yellow;
   height: 300px;
-  flex-grow: 65;
-  flex-basis: 0;
+  flex-grow: 1;
 }
 
 .flex-item5 {
