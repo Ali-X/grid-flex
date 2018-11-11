@@ -1,18 +1,18 @@
-body {
+* {
   margin: 0;
 }
 
 .flex-container {
   display: flex;
   flex-flow: row wrap;
-  text-align: center;
+  margin: auto;
   background-color: darkslategray;
   flex-grow: 1;
   flex-basis: 0;
 }
 
 .flex-container--inner {
-  /*width: calc(65% + 100px);*/
+  flex-grow: 65;
   flex-basis: 0;
 }
 
@@ -27,8 +27,9 @@ body {
 
 .flex-item1 {
   background-color: yellow;
-  width: 100px;
+  /*width: 100px;*/
   height: 100px;
+  flex-basis: 100px;
 }
 
 .flex-item2 {
@@ -40,15 +41,15 @@ body {
 .flex-item3 {
   background-color: darkred;
   color: white;
-  width: 100px;
+  /*width: 100px;*/
   height: 300px;
+  flex-basis: 100px;
 }
 
 .flex-item4 {
   background-color: yellow;
   height: 300px;
-  width: 65%;
-  flex-grow: 1;
+  flex-grow: 65;
   flex-basis: 0;
 }
 
@@ -56,7 +57,8 @@ body {
   background-color: darkslategray;
   color: white;
   height: 450px;
-  width: 35%;
+  flex-grow: 35;
+  flex-basis: 0;
 }
 
 .flex-item6 {
